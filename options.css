@@ -1,0 +1,18 @@
+.key-item {
+    padding: 8px 16px;
+}
+
+#status {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+}
+
+
+.remove {
+    cursor: pointer;
+}

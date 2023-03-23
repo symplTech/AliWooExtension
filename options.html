@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Test Extension Options</title>
+    <title>AliWoo add store key</title>
 </head>
 <body>
-<select id="color">
-    <option value="red">red</option>
-    <option value="green">green</option>
-    <option value="blue">blue</option>
-    <option value="yellow">yellow</option>
-</select>
 
 <label>
-    <input type="checkbox" id="like" />
-    I like colors.
+    Store key
+
+    <input type="text" id="store-key" />
+    <label>
+    <input type="checkbox" id="is-active" />
+    Store is active?
+    </label>
 </label>
 
 <div id="status"></div>
-<button id="save">Save</button>
+<button id="save">add</button>
+<br>
+<h2>List of keys</h2>
+<div class="keys-wrapper">
 
+</div>
+
+<script src="jquery-3.6.4.min.js"></script>
 <script src="options.js"></script>
+<link rel="stylesheet" href="options.css">
 </body>
 </html>
