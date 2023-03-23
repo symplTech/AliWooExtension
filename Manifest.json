@@ -1,0 +1,31 @@
+{
+  "name": "AliWoo",
+  "version": "1.0.0",
+  "description": "Import products from aliexpress to AliWoo",
+  "manifest_version": 3,
+  "author": "Sympl Tech",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.aliexpress.com/*"
+      ],
+      "js": [
+        "jquery-3.6.4.min.js",
+        "script.js"
+      ],
+      "css": ["aliwoo.css"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "Import Products"
+  }
+}
